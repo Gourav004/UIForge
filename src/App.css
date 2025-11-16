@@ -1,7 +1,6 @@
-    @import "tailwindcss";
+@import "tailwindcss";
 
-
- * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -25,17 +24,14 @@ body {
   top: 0;
 }
 
-/* Gradient Logo */
 .logo {
   font-size: 26px;
   font-weight: 800;
   background: linear-gradient(90deg, #a855f7, #f11382);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: 1px;
 }
 
-/* Right Side Icons */
 .nav-icons {
   display: flex;
   gap: 14px;
@@ -59,134 +55,82 @@ body {
   background: rgba(255, 255, 255, 0.12);
 }
 
-/* SVG icons */
-.icon-btn img {
-  width: 20px;
-  height: 20px;
-  filter: invert(1); /* white icons */
+.main {
+  padding: 20px 40px;
 }
 
-/* Responsive */
-@media (max-width: 600px) {
-  .navbar {
-    padding: 12px 20px;
-  }
-
-  .logo {
-    font-size: 22px;
-  }
-
-  .icon-btn {
-    width: 36px;
-    height: 36px;
-  }
-}
-.main{
-  padding: 30px 20px;
-}
-.left{
-  padding: 15px;
+.left {
+  padding: 18px;
 }
 
-.describe{
-  margin: 15px 0 5px 0;
-  color: rgb(226, 221, 221);
-  font-size: 18px;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.describe {
+  margin: 14px 0 6px 0;
+  color: #dadada;
+  font-size: 17px;
 }
 
-
-/* Placeholder padding optional (usually same hota hai) */
-textarea::placeholder {
-  padding-left: 0;        /* You can set extra if you want */
-  color: #777;
-}
-
-
+/* TEXTAREA */
 .my-textarea {
-  background: #000;                 /* bg-black */
-  width: 100%;                      /* w-full */
-  min-height: 250px;                /* min-h-[250px] */
-  max-height: 250px;                /* max-h-[250px] */
-  resize: none;                     /* resize-none */
-  overflow-y: auto;                 /* overflow-y-auto */
-  color: #fff;                      /* text-white */
-  border-radius: 12px;              /* rounded-xl */
-  border: 1px solid rgba(255,255,255,0.10);  /* border-white/10 */
-  outline: none;                    /* outline-none */
-
-  /* Internal padding for text + placeholder */
-  padding: 15px;
-  box-sizing: border-box;
+  background: #000;
+  width: 100%;
+  min-height: 220px;
+  resize: none;
+  overflow-y: auto;
+  color: #fff;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.12);
+  outline: none;
+  padding: 14px;
 }
 
-/* Focus border (purple) */
 .my-textarea:focus {
-  border-color: #a855f7;           /* focus:border-purple-500 */
+  border-color: #a855f7;
 }
 
-/* Placeholder color */
 .my-textarea::placeholder {
   color: #777;
 }
-.generate {
-  padding: 12px 28px;
-  font-size: 16px;
-  font-weight: 600;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap:5px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border: none;
-  border-radius: 12px;
-  cursor: pointer;
-  color: #fff;
 
-  background: linear-gradient(90deg, #d765f3, #9b14e9);
-  transition: 0.3s ease;
-  letter-spacing: 0.5px;
-
-  /* Subtle shadow */
-  box-shadow: 0 4px 14px rgba(168, 85, 247, 0.25);
-}
 .btn-box {
   width: 100%;
   display: flex;
-  justify-content: flex-end;  /* Right align */
+  justify-content: flex-end;
   margin-top: 15px;
 }
 
+.generate {
+  padding: 12px 26px;
+  background: linear-gradient(90deg, #d765f3, #9b14e9);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.25s ease;
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
 
 .generate:hover {
   background: linear-gradient(90deg, #b96aff, #b919f8);
-  box-shadow: 0 4px 20px rgba(241, 19, 130, 0.35);
   transform: translateY(-2px);
 }
 
-.generate:active {
-  transform: scale(0.97);
-}
-
-.top2{
-  padding: 5px 10px 5px 10px;
-  font-weight: 500;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  border-top: 0.2px solid gray;
-}
-.btn{
-  padding: 10px 10px;
-  border-radius: 10px;
-  cursor: pointer;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.editor{
-  margin-top: 30px;
-}
-
-.close{
+.top2 {
   padding: 8px 10px;
+  border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.btn {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.close {
+  padding: 8px 10px;
+  background: #e63946;
+  border: none;
+  border-radius: 6px;
+  color: white;
 }

@@ -21,7 +21,8 @@ const Home = () => {
     { value: "html-tailwind", label: "HTML + Tailwind CSS" },
     { value: "html-bootstrap", label: "HTML + Bootstrap" },
     { value: "html-css-js", label: "HTML + CSS + JS" },
-    { value: "html-tailwind-bootstrap", label: "HTML + Tailwind + Bootstrap" },
+    { value: "react-js-css", label: "React +JS + CSS" },
+    { value: "react-js-tailwind", label: "React +JS + Tailwind" },
   ];
 
   const [framework, setFramework] = useState(options[0]);
@@ -97,6 +98,7 @@ And give the whole code in a single HTML file.
       setOutputScreen(true);
       setCode(extractCode(response.text));
       setLoading(false);
+      toast.success("Component Generated successfully");
     } catch (error) {
       toast.error("Try again after sometime");
     }
